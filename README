@@ -65,11 +65,22 @@
 
   As with all packages, you just have to do
 
+    ./autogen.sh (optional - read later)
     ./configure
     make
     make install
 
   (Before doing install you might need to become root.)
+
+  You must run ./autogen.sh before running the ./configure in the way 
+  suggested by the output of autogen.sh. This creates some required 
+  files which are not stored in the repository. 
+  autogen.sh also checks that you have all required tools installed. 
+  Please read the GIT manual pages before doing so. 
+  The master revision is the  development branch; the stable 2.0 
+  version (currently version  2.0.26) is known as STABLE-BRANCH-2-0; 
+  the stable 1.4 version of GnuPG (1.4.18) is known 
+  as STABLE-BRANCH-1-4.
 
   If everything succeeds, you have a working GnuPG with support for
   OpenPGP, S/MIME, ssh-agent, and smartcards.  Note that there is no
